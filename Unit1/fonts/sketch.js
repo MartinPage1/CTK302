@@ -1,17 +1,22 @@
-let axe;
-let crossbow;
-let shield;
+let font1, font2;
 
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(500, 500);
 
-  axe = loadImage('assets/axe.png');
-  crossbow = loadImage('assets/crossbow.png');
-  shield = loadImage('assets/shield.png');
+  font1 = loadFont("assets/quiteMagical.ttf");
+  font2 = loadFont("assets/whoAsksSatan.ttf");
+  textAlign(CENTER);
+
 }
 
 function draw() {
-  image(crossbow, 200, 200, 400, 400) ;
-  image(axe, 100, 100, 400, 400) ;
-  image(shield, 400, 200, 200, 200) ;
+  background (100);
+  textSize(80);
+
+  textFont(font1);
+  text("Hello.", width/2, 100);
+
+  textFont(font2);
+  text("How are ya?", width/2, 200);
+
 }
