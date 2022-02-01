@@ -5,9 +5,9 @@ let shield;
 function setup() {
   createCanvas(1000, 1000);
 
-  axe = loadImage('assets/axe.png') ;
-  crossbow = loadImage('assets/crossbow.png') ;
-  shield = loadImage('assets/shield.png') ;
+  axe = loadImage('assets/axe.png');
+  crossbow = loadImage('assets/crossbow.png');
+  shield = loadImage('assets/shield.png');
 }
 
 function draw() {
