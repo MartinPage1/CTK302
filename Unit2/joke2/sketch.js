@@ -3,7 +3,7 @@ let timer = 0;
 
 function setup() {
   createCanvas(800, 300);
-  textAlign(CENTER);
+  textAlign(CENTER, CENTER);
   rectMode(CENTER);
   textFont("Georgia")
 }

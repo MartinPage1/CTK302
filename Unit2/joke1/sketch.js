@@ -2,7 +2,7 @@ let state = 0;
 
 function setup() {
   createCanvas(500, 300);
-  textAlign(CENTER);
+  textAlign(CENTER, CENTER);
   rectMode(CENTER);
   textFont("Georgia")
 }
