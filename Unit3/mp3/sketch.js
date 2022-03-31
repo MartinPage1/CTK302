@@ -84,7 +84,7 @@ function draw() {
       timer++;
       if (timer > maxTimer * 60) {
         timer = 0;
-        state = 4;
+        state = 5;
       }
       break;
 
@@ -99,7 +99,7 @@ function draw() {
       state = 4;
       break;
     case 4: // win!
-      background("grey");
+      background("darkblue");
       image(richSuitCat, 110, 100, 660, 500);
       //drawTerrain();
       //update();
@@ -116,7 +116,7 @@ function draw() {
       break;
 
     case 5: // lose
-      background("grey");
+      background("darkred");
       drawTerrain();
       update();
       text("Uh oh, he didn't meet his deadline.", 100, 100);
