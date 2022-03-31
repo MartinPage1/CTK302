@@ -96,7 +96,7 @@ function draw() {
       for (let i = 0; i < maxcash+50; i++) {
         cash.push(new Cash());
       }
-      state = 4;
+      state = 5;
       break;
     case 4: // win!
       background("darkblue");
