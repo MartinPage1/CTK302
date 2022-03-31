@@ -194,9 +194,18 @@ function checkForKeys() {
     catPos.x -= 5;
     if (catPos.x < 0) catPos.x = width;
   }
-  if (keyIsDown(68)) catPos.x += 5;
-  if (keyIsDown(87)) catPos.y -= 5;
-  if (keyIsDown(83)) catPos.y += 5;
+  if (keyIsDown(68)) {
+    catPos.x += 5;
+    if (catPos.x > width) catPos.x = 0;
+  }
+  if (keyIsDown(87)) {
+    catPos.y -= 5;
+    if (catPos.y < 0) catPos.y = height;
+  }
+  if (keyIsDown(83)){
+     catPos.y += 5;
+    if (catPos.y > height) catPos.y = 0;
+  }
 }
 
 function mouseReleased() {
@@ -263,7 +272,6 @@ function drawTerrain() {
       image(tiles[i + j * w], (i - buffer / 2) * tileSize - xRO, (j - buffer / 2) * tileSize - yRO, tileSize, tileSize);
     }
   }
-
 }
 
 function getTile(x, y, terrainScales) {
