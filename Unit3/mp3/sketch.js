@@ -3,7 +3,7 @@ let cash = [];
 let catPos;
 let state = 0;
 let timer = 0;
-let maxcash = 25;
+let maxcash = 15;
 let maxTimer = 60;
 let score = 0;
 let suitCat;
