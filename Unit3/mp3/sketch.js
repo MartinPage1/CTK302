@@ -117,8 +117,8 @@ function draw() {
 
     case 5: // lose
       background("darkred");
-      drawTerrain();
-      update();
+      //drawTerrain();
+      //update();
       text("Uh oh, he didn't meet his deadline.", 100, 100);
       break;
   }
