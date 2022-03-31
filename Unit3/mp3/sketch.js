@@ -64,6 +64,7 @@ function setup() {
 function draw() {
   switch (state) {
     case 0:
+      song2.stop();
       background("grey");
       drawTerrain();
       update();
