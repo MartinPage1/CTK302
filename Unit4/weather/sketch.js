@@ -1,3 +1,4 @@
+//https://martinpage1.github.io/CTK302/Unit4/weather/
 let weather;
 let weatherID = 0; // returned in the JSON weather element
 let state = 0;
