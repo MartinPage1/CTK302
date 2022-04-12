@@ -13,7 +13,7 @@ function setup() {
   // createCanvas(windowWidth, windowHeight);
   createCanvas(displayWidth, displayHeight);
   num = 0;
-  //textFont('Georgia', 36);
+  textFont('Georgia', 36);
   intervalCurrentPosition(positionPing, 5000); // this is what calls positionPing function
 
 }
@@ -23,7 +23,7 @@ function draw() {
 }
 
 function positionPing(position) {
-  textSize(36);
+  // textSize(36);
   num++;
 
   distance = calcGeoDistance(locationData.latitude, locationData.longitude, position.latitude, position.longitude, 'mi');
