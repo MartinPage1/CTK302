@@ -7,7 +7,7 @@ let maxcash = 15;
 let maxTimer = 60;
 let score = 0;
 let suitCat;
-let rishSuitCat;
+let richSuitCat;
 let diamonds;
 let song;
 let song2;
