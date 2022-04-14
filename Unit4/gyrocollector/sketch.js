@@ -85,13 +85,7 @@ function draw() {
   fill('white');
   textSize(40);
   textAlign(CENTER);
-  text("your words or image here!", width / 2, 600, windowWidth - 200, windowHeight - 200);
-
-
-  // Debugging information -- take this out when you're ready for production!
-  // Just a bunch of text commands to display data coming in from addEventListeners
-
-
+  text("Get that cash, Suitcat!", width / 2, 600, windowWidth - 200, windowHeight - 200);
 
 }
 
@@ -141,10 +135,12 @@ function Car() {
   this.display = function() {
 
     // maybe use an image here instead!
-    fill(this.r, this.g, this.b, this.a);
-    ellipse(this.pos.x - 50, this.pos.y, 50, 50);
-    ellipse(this.pos.x + 50, this.pos.y, 50, 50);
-    rect(this.pos.x + 17, this.pos.y - 30, 80, 60) ;
+    fill("Lightgreen");
+    rect(this.pos.x, this.pos.y, 75, 40);
+    fill("black");
+    text("$", this.pos.x-20, this.pos.y + 15);
+    text("$", this.pos.x + 20, this.pos.y + 15);
+    image(diamonds, this.pos.x, this.pos.y, 15, 15);
 
   }
 
