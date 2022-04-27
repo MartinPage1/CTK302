@@ -95,6 +95,7 @@ function draw() {
 
 function deviceShaken() {
   // re-spawn cars
+  chaching.play();
   cars = []; // clear the array first
   for (var i = 0; i < 40; i++) {
     cars.push(new Car());
