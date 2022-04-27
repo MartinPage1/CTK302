@@ -36,8 +36,7 @@ function setup() {
   for (var i = 0; i < 40; i++) {
     cars.push(new Car());
   }
-  song.play();
-  song.setVolume(0.1);
+
   // initialize the frog's position
   frogPos = createVector(width / 2, height - 80);
 
