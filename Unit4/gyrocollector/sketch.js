@@ -10,6 +10,7 @@ let richSuitCat;
 let diamonds;
 let song;
 let song2;
+let chaching;
 
 // var bunnyImage;
 var cars = [];
@@ -26,6 +27,8 @@ function setup() {
   gamma = 0;
 
 
+  song = loadSound('assets/cyberSong.mp3');
+  chaching = loadSound('assets/chaching.mp3');
   suitCat = createImg('assets/SuitCat.gif');
   diamonds = loadImage('assets/diamond.png');
   richSuitCat = loadImage('assets/SuitCatRich.png');
@@ -33,7 +36,8 @@ function setup() {
   for (var i = 0; i < 40; i++) {
     cars.push(new Car());
   }
-
+  song.play();
+  song.setVolume(0.1);
   // initialize the frog's position
   frogPos = createVector(width / 2, height - 80);
 
