@@ -116,10 +116,6 @@ window.addEventListener('devicemotion', function(e) {
   z = e.acceleration.z;
 });
 
-
-
-
-
 // car class!!
 function Car() {
   // attributes
