@@ -10,7 +10,7 @@ let richSuitCat;
 let diamonds;
 let song;
 let song2;
-let chaching;
+//let chaching;
 
 // var bunnyImage;
 var cars = [];
@@ -19,8 +19,9 @@ var frogPos;
 function preload(){
 
     song = new Audio('assets/cyberSong.mp3');
-    chaching = new Audio('assets/chaching.mp3');
+    var chaching = new Audio('assets/chaching.mp3');
     chaching.loop = false;
+
 }
 function setup() {
 
@@ -96,6 +97,8 @@ function draw() {
 
 function deviceShaken() {
   // re-spawn cars
+  var chaching = new Audio('assets/chaching.mp3');
+  chaching.loop = false;
   chaching.play();
   cars = []; // clear the array first
   for (var i = 0; i < 40; i++) {
