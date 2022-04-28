@@ -16,7 +16,12 @@ let chaching;
 var cars = [];
 var frogPos;
 
+function preload(){
 
+    song = new Audio('assets/cyberSong.mp3');
+    chaching = new Audio('assets/chaching.mp3');
+    chaching.loop = false;
+}
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
@@ -26,9 +31,6 @@ function setup() {
   beta = 0;
   gamma = 0;
 
-
-  song = loadSound('assets/cyberSong.mp3');
-  chaching = loadSound('assets/chaching.mp3');
   suitCat = createImg('assets/SuitCat.gif');
   diamonds = loadImage('assets/diamond.png');
   richSuitCat = loadImage('assets/SuitCatRich.png');
